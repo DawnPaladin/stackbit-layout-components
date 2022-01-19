@@ -81,7 +81,7 @@ function mapAlignItems(alignment) {
 function childComponents(children) {
     return children.map((child, index) => {
         const Child = getComponent(child.type);
-        return <Child key={index} {...child} />;
+        return <Child key={index} {...child} data-sb-field-path={`.children.${index}`} />;
     });
 }
 
