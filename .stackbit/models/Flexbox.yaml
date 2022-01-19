@@ -1,0 +1,27 @@
+name: Flexbox
+label: Flexbox
+groups:
+  - sectionComponent
+fields:
+  - type: markdown
+    name: text
+    default: ''
+  - type: list
+    name: children
+    items:
+      type: model
+      models:
+        - Flexbox
+        - Image
+        - TextSection
+        - VideoBlock
+  - type: style
+    name: styles
+    styles:
+      self:
+        width: ['wide', 'auto', 'narrow', 'full']
+        flexDirection: ['row', 'row-reverse', 'col', 'col-reverse']
+        justifyContent: ['flex-start', 'center', 'flex-end', 'space-between', 'space-around', 'space-evenly']
+        alignItems: ['flex-start', 'flex-end', 'center', 'baseline', 'stretch']
+        padding: ['tw0:36']
+        margin: ['tw0:36']

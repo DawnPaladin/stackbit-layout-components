@@ -1,0 +1,16 @@
+name: Video
+label: Video
+groups: 
+  - BlockComponents
+  - sectionComponent
+fields:
+  - name: url
+    type: string
+    label: URL
+    required: true
+  - type: style
+    name: styles
+    styles:
+      self:
+        width: ['wide', 'auto', 'narrow', 'full']
+        padding: ['tw0:36']

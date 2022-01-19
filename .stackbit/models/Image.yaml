@@ -1,0 +1,24 @@
+name: Image
+label: Image
+groups:
+  - BlockComponents
+fields:
+  - type: image
+    name: image
+    required: true
+  - type: string
+    name: altText
+    label: Alt text (for the visually impaired)
+    default:
+  - type: string
+    name: link
+    default:
+  - type: string
+    name: width
+    label: Width
+    default:
+  - type: string
+    name: height
+    label: Height
+    default:
+labelField: altText
